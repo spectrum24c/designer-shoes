@@ -1,0 +1,34 @@
+body{
+    background-image: url(../../../Downloads/son-goku-silhouette-3840x2160-17760.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+svg path{
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-dasharray: 620;
+    stroke-dashoffset: 620;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation{
+    0%{
+        stroke-dashoffset: 620;
+    }
+    50%{
+        fill: transparent;
+    }
+    100%{
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+}
+

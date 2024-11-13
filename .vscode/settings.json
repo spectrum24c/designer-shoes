@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "window.autoDetectColorScheme": false,
+    "liveServer.settings.port": 5501
+}

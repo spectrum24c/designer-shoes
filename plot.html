@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
+    />
+    <script src="https://kit.fontawesome.com/392edcbb60.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-image: url(../../../Downloads/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);
+        color: #111010;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      form {
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 150px;
+        margin-left: 525px;
+        font-family: Arial, sans-serif;
+        width: 20%;
+        box-shadow: 0 10px 10px 9px rgba(3, 3, 3, 0.5);
+        color: rgb(252, 249, 248);
+        background-color: transparent;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 6px 30px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        transition: color 1s, 0.5s ease-in-out;
+      }
+      input[type="submit"]:hover {
+        background-color: #1fbce4;
+        color: white;
+        transition: 1s, 1s ease-in-out;
+      }
+      @media screen and (max-width: 600px) {
+        form {
+          width: 90%;
+          margin-left: 5%;
+        }
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-left: 90px;
+        cursor: pointer;
+      }
+      #person {
+        font-size: 20px;
+        position: relative;
+        right: 82px;
+        top: 30px;
+        color: #111010;
+      }
+      #mail {
+        font-size: 20px;
+        position: relative;
+        right: 48px;
+        top: 30px;
+        color: #111010;
+      }
+      #password {
+        font-size: 20px;
+        position: relative;
+        right: 80px;
+        top: 30px;
+        color: #111010;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <img
+        src="../../../Downloads/136480363_33e4425f-3a3f-466d-93d2-78b807429841.jpg"
+        alt=""
+      />
+      <br />
+      <label for="name">Username:</label>
+      <i class="fa-solid fa-user" id="person"></i>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <i class="fa-solid fa-envelope" id="mail"></i>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="phone">Password:</label>
+      <i class="fa-solid fa-lock fa-spin" id="password"></i>
+      <input type="password" id="phone" name="phone" required />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
