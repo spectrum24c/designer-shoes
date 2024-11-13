@@ -55,8 +55,8 @@
 <footer>
   <div class="footer-container">
       <div class="footer-section about">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3>About Us</h3> 
+          <p>Founded in 2023, Our Company has been dedicated to providing top-notch services to our clients. Our journey began with a simple idea: to make quality services accessible to everyone</p>
           <div class="social-icons">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a id="link" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
@@ -75,9 +75,9 @@
       </div>
       <div class="footer-section newsletter">
           <h3>Subscribe to our Newsletter</h3>
-          <form>
-              <input type="email" placeholder="Your email address" required>
-              <button type="submit">Subscribe</button>
+          <form  action='/' method='POST' onsubmit='disableButton()'>
+              <input type="email" placeholder="Your email address" required accesskey="kenny">
+              <button type="submit" id="btn">Subscribe</button>
           </form>
       </div>
   </div>
@@ -88,7 +88,13 @@
   $("#link").click(function(ev) {
     ev.preventDefault();
   });
+  function disableButton() {
+        var btn = document.getElementById('btn');
+        btn.disabled = true;
+        btn.innerText = 'Posting...'
+    }
 </script>
+
 
 </body>
 </html>
