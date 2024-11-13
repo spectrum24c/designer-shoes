@@ -518,7 +518,6 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-
 @media screen and (width < 600px){
   nav {
    width: auto;
@@ -529,15 +528,15 @@ nav ul li a:hover {
   .logo {
     width: 20%;
   }
-  
   nav ul li {
+    font-weight: 800;
     list-style: none;
     display: inline-block;
      margin: 0 -1px;
+     padding: 6px;
      position: relative;
-     right: 30px;
+     right: 40px;
   }
-  
   nav ul li a {
     font-size: medium;
     font-family: Poppins;
@@ -547,8 +546,8 @@ nav ul li a:hover {
   }
   
   nav ul li a:hover {
+ 
     color: #ff4321;
-    cursor: pointer;
   }
 
   #icon {
