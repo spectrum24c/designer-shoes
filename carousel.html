@@ -1,81 +1,90 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="carousel.css">
-</head>
-
-<body>
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="tom-radetzki-trdk1R0F3tg-unsplash.jpg" alt="">
-           
-                <img id="slide-2" src="linda-xu-fUEP0djb1hA-unsplash.jpg" alt="">
-
-                <img id="slide-3" src="malvestida-DMl5gG0yWWY-unsplash.jpg" alt="">
-            </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
-        </div>
-    </section>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scroll.css">
+    <title>About Us</title>
 </head>
 <body>
 
-<div class="container"   style="border-radius: 50px;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-radius: 50px;">
-    <!-- Indicators -->
-    <ol class="carousel-indicators" >
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<header>
+    <h1>About Us</h1>
+</header>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="border-radius: 50px;">
-      <div class="item active">
-        <img src="linda-xu-fUEP0djb1hA-unsplash.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
+<main>
+    <section class="about-overview">
+        <h2>Our Story</h2>
+        <p>Founded in 2023, Our Company has been dedicated to providing top-notch services to our clients. Our journey began with a simple idea: to make quality services accessible to everyone.</p>
+    </section>
 
-      <div class="item">
-        <img src="tom-radetzki-trdk1R0F3tg-unsplash.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="malvestida-DMl5gG0yWWY-unsplash.jpg" alt="New york" style="width:100%;">
-      </div>
-    </div>
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower individuals and businesses by providing innovative solutions that enhance productivity and foster growth.</p>
+    </section>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>CEO & Founder</p>
+            <p>John has over 10 years of experience in the industry and is passionate about driving innovation.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Chief Operating Officer</p>
+            <p>Jane ensures that our operations run smoothly and efficiently, focusing on customer satisfaction.</p>
+        </div>
+        <div class="team-member">
+            <img src="girl.png" alt="Team Member 3" width="80px">
+            <h3>Emily Johnson</h3>
+            <p>Marketing Director</p>
+            <p>Emily leads our marketing efforts, helping to connect our services with those who need them.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to learn more about our services, feel free to reach out!</p>
+        <p>Email: <a href="mailto:info@ourcompany.com">info@ourcompany.com</a></p>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="active">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-section newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <form>
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
   </div>
-</div>
+  <div class="footer-bottom">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
