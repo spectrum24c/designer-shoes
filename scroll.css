@@ -529,11 +529,10 @@ nav ul li a:hover {
     width: 20%;
   }
   nav ul li {
-    font-weight: 800;
     list-style: none;
     display: inline-block;
      margin: 0 -1px;
-     padding: 6px;
+     padding: 3px;
      position: relative;
      right: 40px;
   }
