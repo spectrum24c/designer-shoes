@@ -3,7 +3,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Poppins;
-  margin-bottom: 30px;
   scroll-behavior: smooth;
 }
 * {
@@ -519,7 +518,7 @@ nav ul li a:hover {
 }
 svg path{
   fill: transparent;
-  stroke: black;
+  stroke: var(--secondary-color);
   stroke-width: 0.5;
   stroke-dasharray: 130;
   stroke-dashoffset: 130;
@@ -531,11 +530,11 @@ svg path{
     stroke-dashoffset: 130;
   }
   80%{
-    fill: transparent;
+    fill: var(--secondary-color);
   }
   100%{
     stroke-dashoffset: 0;
-    fill: black;
+    fill: var(--secondary-color);
   }
 }
 
@@ -605,4 +604,108 @@ svg path{
   
 
 }
-  
+
+
+
+footer {
+  width: 101%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
+    top: 50px;
+    right: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ecf0f1;
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #c0392b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1a252f;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    margin-top: 90px;
+      flex-direction: column;
+      align-items: center;
+  }
+}
