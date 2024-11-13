@@ -533,7 +533,7 @@ nav ul li a:hover {
   nav ul li {
     list-style: none;
     display: inline-block;
-     margin: 0 -2px;
+     margin: 0 -1px;
      position: relative;
      right: 30px;
   }
