@@ -548,7 +548,7 @@ svg path {
 }
 
   .navigation{
-    position: fixed;
+    position: fixed bottom;
     width: 400px;
     height: 60px;
     background: var(--clr);
@@ -556,9 +556,16 @@ svg path {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    top: 690px;
+    top: 700px;
     bottom: 0;
-    left: -50px;
+   z-index: 1;
+    right: 0;
+    left: 0;
+    right: 50px;
+}
+
+#over{
+  z-index: -1;
 }
 
 .navigation ul{
@@ -572,7 +579,7 @@ svg path {
     list-style: none;
     width: 60px;
     height: 50px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .navigation ul li a{
@@ -617,41 +624,7 @@ svg path {
     transform: translate(0px);
 }
 
-.indicator{
-    position: absolute;
-    top: -15px
-    ;
-    width: 50px;
-    height: 50px;
-    background: greenyellow;
-    border-radius: 50%;
-    border: 5px solid var(--clr);
-    transition: 0.5s;
-}
-.indicator::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 22px;
-    height: 25px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 0px -12px 0 0 var(--clr);
 
-}
-.indicator::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 21.1px;
-    height: 25px;
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -12px 0 0 var(--clr);
-
-}
 
 .navigation ul li:nth-child(1).active ~ .indicator{
     transform: translateX(calc(70px * 0));
