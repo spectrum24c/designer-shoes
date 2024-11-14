@@ -546,6 +546,9 @@ svg path {
   :root{
     --clr: #222327
 }
+#fadeshow1{
+  display: none;
+}
 
   .navigation{
     position: fixed;
@@ -556,15 +559,14 @@ svg path {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    top: 700px;
-    bottom: 0;
-  
-    
-    left: 0;
-    right: 50px;
+    top: 720px;
+    right: 20px;
+ bottom: 0;
 }
 
-
+body{
+  margin-bottom: 0;
+}
 
 .navigation ul{
     display: flex;
@@ -577,7 +579,7 @@ svg path {
     list-style: none;
     width: 60px;
     height: 50px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .navigation ul li a{
@@ -733,6 +735,7 @@ footer {
   position: relative;
   top: 50px;
   right: 10px;
+ 
 }
 
 .footer-container {
