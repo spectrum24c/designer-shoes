@@ -548,7 +548,7 @@ svg path {
 }
 
   .navigation{
-    position: fixed bottom;
+    position: fixed;
     width: 400px;
     height: 60px;
     background: var(--clr);
@@ -558,15 +558,13 @@ svg path {
     border-radius: 10px;
     top: 700px;
     bottom: 0;
-   z-index: 1;
-    right: 0;
+  
+    
     left: 0;
     right: 50px;
 }
 
-#over{
-  z-index: -1;
-}
+
 
 .navigation ul{
     display: flex;
