@@ -557,6 +557,7 @@ svg path {
     align-items: center;
     border-radius: 10px;
     top: 690px;
+    bottom: 0;
     left: -50px;
 }
 
