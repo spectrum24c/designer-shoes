@@ -743,3 +743,9 @@ h2 {
   margin-bottom: 10px;
 }
 
+.navigation a.active {
+  background: rgb(211, 211, 211);
+   backdrop-filter: blur(50px);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
