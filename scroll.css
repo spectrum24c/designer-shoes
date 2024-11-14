@@ -456,11 +456,15 @@ nav ul li a:hover {
 }
 
 :root {
+  --text-color2: #ffffff;
+  --background-color: #1a1a1a;
   --primary-color: rgb(226, 226, 226);
   --secondary-color: #212121;
 }
 
 .dark-theme {
+  --text-color2: #ffffff;
+  --background-color: #cfcfcfce;
   --primary-color: #0d1127;
   --secondary-color: grey;
 }
@@ -713,13 +717,14 @@ main {
   padding: 20px;
   max-width: 800px;
   margin: auto;
-  background: #ffffff;
+  color: var(--text-color2);
+  background: var(--background-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   margin-top: 20px;
-  color: #35424a;
+  color: var(--text-color2);
 }
 
 .about-overview, .mission, .team, .contact {
