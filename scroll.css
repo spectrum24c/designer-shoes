@@ -552,7 +552,7 @@ svg path {
 }
 
   .navigation{
-    position: fixed;
+    position: fixed bottom;
     width: 389px;
     height: 60px;
     background: var(--clr);
