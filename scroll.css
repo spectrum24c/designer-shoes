@@ -537,22 +537,19 @@ svg path {
 }
 
 @media screen and (width >= 600px) {
-  #fadeshow{
+  #fadeshow12{
     display: none;
   }
 }
 
 @media screen and (width < 600px) {
-
+  
   :root{
     --clr: #222327
 }
 #fadeshow1{
   display: none;
 }
-
- 
-
   nav {
     width: auto;
     display: flex;
