@@ -7,7 +7,7 @@ body {
 }
 * {
   box-sizing: border-box;
-  
+  bottom: 0;
 }
 
 :root {
